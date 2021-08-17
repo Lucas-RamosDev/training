@@ -1,0 +1,24 @@
+/* Global ================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+}
+
+header {
+  background-color: aliceblue;
+
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Fredericka the Great', cursive;
+  color: rgb(17, 109, 247);
+  font-size: 4rem;
+}
+
