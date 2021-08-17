@@ -1,5 +1,17 @@
 /* Global ================================= */
 
+:root {
+  --dark-blue:#1A2749;
+  --blue: #5572F0;
+  --purple: #8C5BE6;
+
+  --yellow: #ECA624;
+  --red: #E13E57;
+  --green: #00D96D;
+
+  --text-color: #FAFAFA
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,18 +19,129 @@
 }
 
 body {
-  
+  background: var(--dark-blue);
+  font-family: 'Poppins', sans-serif;
 }
 
-header {
-  background-color: aliceblue;
 
+/* Header ================================= */
+
+header {
   text-align: center;
 }
 
-.logo {
+#logo {
   font-family: 'Fredericka the Great', cursive;
-  color: rgb(17, 109, 247);
-  font-size: 4rem;
+  font-size: 5rem;
+  color: var(--blue);
+
 }
 
+#logo span {
+  color: var(--purple);
+}
+
+/* Main ================================= */
+
+main {
+
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+#title h2 {
+  height: 4rem;
+  color: var(--text-color);
+  font: 400 2rem "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box ================================= */
+
+#box {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-main {
+  width: 10rem;
+  height: 10rem;
+
+  border: 2px darkgrey solid;
+
+  background: #fff;
+}
+
+.box-main.yellow-color {
+  background: var(--yellow) !important;
+}
+
+.box-main.red-color {
+  background: var(--red) !important;
+}
+
+.box-main.green-color {
+  background: var(--green) !important;
+}
+
+
+
+/* Controls ================================= */
+
+#controls {
+  margin-top: 3rem;
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+}
+
+#controls a {
+  text-decoration: none;
+
+  width: 8rem;
+  height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px #fff solid;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.button.yellow:hover {
+  background: var(--yellow);
+}
+
+.button.red:hover {
+  background: var(--red);
+}
+
+.button.green:hover {
+  background: var(--green);
+}
+
+/* ### ########## ### */
+/* ### Responsive ### ================================= */
+/* ### ########## ### */
+
+@media (min-width: 500px) {
+
+  #controls { 
+    justify-content:center;
+    gap: 2rem
+  
+  }
+
+
+}

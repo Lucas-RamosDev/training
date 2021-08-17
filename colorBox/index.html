@@ -10,17 +10,100 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   
   <header>
-    <div class="logo">ColorBox</div>
+    <div id="logo">Color<span>Box</span></div>
   </header>
 
-  <main></main>
+  <main>
+
+    <section id="title">
+      <h2>Selecione uma cor</h2>
+    </section>
+
+    <section id="box">
+      <div class="box-main"></div>
+    </section>
+
+    <section id="controls">
+      <a 
+      href="#"
+      class="button yellow"
+      onclick="Colors.colorYellow()"
+      >
+        Amarelo
+      </a>
+
+      <a 
+      href="#"
+      class="button red"
+      onclick="Colors.colorRed()"
+      >
+        Vermelho
+      </a>
+
+      <a 
+      href="#"
+      class="button green"
+      onclick="Colors.colorGreen()"
+      >
+        Verde
+      </a>
+
+
+
+    </section>
+
+  </main>
 
   <footer></footer>
+
+  <script>
+
+    const Colors = {
+
+      colorYellow () {
+        document.querySelector('.box-main')
+        .classList.remove('red-color')
+
+        document.querySelector('.box-main')
+        .classList.remove('green-color')
+
+        document.querySelector('.box-main')
+          .classList.add('yellow-color')
+      },
+
+      colorRed () {
+        document.querySelector('.box-main')
+          .classList.remove('yellow-color')
+
+        document.querySelector('.box-main')
+        .classList.remove('green-color')
+
+        document.querySelector('.box-main')
+        .classList.add('red-color')
+      },
+
+      colorGreen() {
+        document.querySelector('.box-main')
+        .classList.remove('red-color')
+
+        document.querySelector('.box-main')
+        .classList.remove('yellow-color')
+
+        document.querySelector('.box-main')
+          .classList.add('green-color')
+      }
+
+
+    }
+
+
+  </script>
 
 </body>
 </html>
