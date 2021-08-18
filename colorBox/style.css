@@ -1,7 +1,9 @@
 /* Global ================================= */
 
 :root {
-  --dark-blue:#1A2749;
+  --dark-blue:#121214;
+  --grey: #29292E;
+  --dark-light: #202024;
   --blue: #5572F0;
   --purple: #8C5BE6;
 
@@ -9,7 +11,7 @@
   --red: #E13E57;
   --green: #00D96D;
 
-  --text-color: #FAFAFA
+  --text-color: #FAFAFA;
 }
 
 * {
@@ -28,13 +30,15 @@ body {
 
 header {
   text-align: center;
+  background: var(--dark-light);
+  border-bottom: 1px var(--grey) solid;
 }
 
 #logo {
   font-family: 'Fredericka the Great', cursive;
   font-size: 5rem;
   color: var(--blue);
-
+  padding: 1rem 0;
 }
 
 #logo span {
