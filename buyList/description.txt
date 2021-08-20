@@ -1,0 +1,17 @@
+Lista de Compras
+
+Criar um app onde eu consiga descrever os itens para realizar compras no supermercado.
+
+--- FUNCIONALIDADES ---
+  
+  -> Adicionar itens
+    -- quantidade de itens
+    -- valor pago nos itens
+  
+  -> Editar os itens através do modal  
+  
+  -> Remover itens
+  
+  -> marcar como comprado
+
+  -> mostrar o total que ficou a compra
