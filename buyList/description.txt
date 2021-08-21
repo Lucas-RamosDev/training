@@ -8,10 +8,11 @@ Criar um app onde eu consiga descrever os itens para realizar compras no superme
     -- quantidade de itens
     -- valor pago nos itens
   
-  -> Editar os itens através do modal  
   
   -> Remover itens
   
   -> marcar como comprado
+    -- quando marcar como comprado solicitar ao usuario que confirme a quantidade
+      e informe o valor unitário 
 
   -> mostrar o total que ficou a compra
