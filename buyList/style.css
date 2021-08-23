@@ -184,7 +184,8 @@ table tbody td + td + td + td + td + td {
 
 /* Modal cadastro =================================== */
 
-.modal-overlay {
+.modal-register,
+.modal-cheking {
   width: 100%;
   height: 100%;
 
@@ -202,7 +203,8 @@ table tbody td + td + td + td + td + td {
   visibility: hidden;
 }
 
-.modal-overlay.active {
+/* -- Exibe modal -- */
+.active {
   opacity: 1;
   visibility: visible;
 }
